@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
     <title>limit input characters</title>
 </head>
-<body>
-    <div>
-        
+<body class="flex justify-center items-center h-screen bg-indigo-800">
+    <div class="bg-white flex items-center justify-center w-80 h-14 rounded-md">
+        <form class="relative" action="#">
+            <span class="at absolute top-1 text-lg left-2">@</span>
+            <input id="input" maxlength="16" placeholder="username" class="w-full border-2 border-black rounded-md h-10 pl-7" type="text">
+            <span id="count" class="counter absolute top-1 text-lg right-3 w-6 border-l-2 pl-1"></span>
+        </form>
     </div>
-    
+    <script src="main.js"></script>
 </body>
 </html>
